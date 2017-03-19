@@ -6,3 +6,6 @@ ENV BUILD_DEPS="git" \
 RUN apk update
 RUN apk add $RUN_DEPS $BUILD_DEPS
 
+RUN curl --silent https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein > /usr/local/bin/lein && \
+    chmod +x /usr/local/bin/lein
+
