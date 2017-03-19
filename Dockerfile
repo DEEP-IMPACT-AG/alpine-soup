@@ -1,0 +1,8 @@
+from alpine:latest
+
+ENV BUILD_DEPS="git" \
+    RUN_DEPS="bash supervisor openssh-client openjdk8-jre nodejs curl"
+
+RUN apk update
+RUN apk add $RUN_DEPS $BUILD_DEPS
+
