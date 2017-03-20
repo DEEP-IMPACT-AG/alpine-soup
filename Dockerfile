@@ -14,5 +14,3 @@ RUN \
     apk --purge -v del py-pip && \
     rm /var/cache/apk/*
 
-RUN npm install rimraf -g
-
