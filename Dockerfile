@@ -13,3 +13,6 @@ RUN \
     pip install awscli && \
     apk --purge -v del py-pip && \
     rm /var/cache/apk/*
+
+npm install rimraf -g
+
