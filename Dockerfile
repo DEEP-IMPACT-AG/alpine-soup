@@ -1,6 +1,6 @@
 from alpine:latest
 
-ENV BUILD_DEPS="git apache-ant groff less python py2-pip" \
+ENV BUILD_DEPS="git apache-ant groff less tar gzip python py2-pip" \
     RUN_DEPS="bash supervisor openssh-client openjdk8-jre nodejs curl"
 
 RUN apk update
