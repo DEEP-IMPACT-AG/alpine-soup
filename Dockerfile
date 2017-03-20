@@ -10,7 +10,6 @@ RUN curl --silent https://raw.githubusercontent.com/technomancy/leiningen/stable
     chmod +x /usr/local/bin/lein
 
 RUN \
-    pip install --upgrade pip \
     pip install awscli && \
     apk --purge -v del py-pip && \
     rm /var/cache/apk/*
