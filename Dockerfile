@@ -1,4 +1,4 @@
-from alpine:latest
+from alpine:3.5
 
 ENV BUILD_DEPS="git apache-ant groff less tar gzip python py2-pip" \
     RUN_DEPS="bash supervisor openssh-client openjdk8-jre nodejs curl"
